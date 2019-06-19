@@ -6,7 +6,7 @@
     - [`require.js`](https://cdnjs.com/libraries/require.js)
         > used for loading in a custom template language
     - [require-text.js](https://cdnjs.com/libraries/require-text)
-        > An AMD loader plugin for loading the text templates with a `REGEX`.
+        > An AMD loader plugin for loading the text templates with a `REGEX`
     - [`load.js`](https://cdnjs.com/libraries/loadjs)
         > async loading with promises
     - [`firebase.js`](https://firebase.google.com/docs/reference/js)
@@ -32,12 +32,12 @@ When possible the [`Python` PEP 8](https://www.python.org/dev/peps/pep-0008/) st
 
  - `dot notation` with `IIFE's` over `bracket notation`
     > `app.contoller.user.signin` _versus_ `app.controller[user].signin()`
- - `single quotes` over `double quotes`.
+ - `single quotes` over `double quotes`
  - `underscores` over `dashes`
     > `var name_of_property` _versus_  `var name-of-property`
 
 ## How do I get started?
- > Config: `app.config.js` file with `firebase` credentials
+ > Add in your `API Keys` to: `app.config.js` with your `firebase` credentials
 ```javascript
 var firebase_config = {
         apiKey: FIREBASE_API_KEY,
@@ -57,9 +57,9 @@ var firebase_config = {
 You can find information on the usage of `.prototype` [here](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes)
 
 ### What is a `try/catch` function doing?
-This is similar to an if/else statement. Try/catch statements are used for testing code for errors. The try statement is filled with what is to be tested. The catch statement is filled with how you wish to handle errors that are caught.
+This is similar to an` if/else` statement. `Try/catch` statements are used for testing code for errors. The try statement is filled with what is to be tested. The catch statement is filled with how you wish to handle errors that are caught.
 
-You can read more about try/catch statements [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch)
+You can read more about `try/catch` statements [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch)
 
 ### What's with the modules that return just an empty `JSON` object?
 This is done to instantiate an object for further use. Once instantiated, the object can have methods and properties added to it.
@@ -101,7 +101,7 @@ function(){
 
 This `callback function` runs first with the app config.
 Then configures the `app` to use the `firebase` database.
-Finally, it pulls in the `view`, where to place the `template` and a callback function to run when complete for the `signin` process.
+Finally, it pulls in the `view`, where to place the `template`, and a callback function to run when complete for the `signin` process.
 
 ### What is the `app.util.mutation` module used for?
 
@@ -111,7 +111,7 @@ An `observer function` for watching detects changes to the browser before they a
 ### What are all the `APP` `HTML` `ID selectors`?
 
 This is a list of all IDs currently in use in the `Firebase` `App`.
-They are targeted with `JAVASCRIPT` targeting `CSS` `REGEX` syntax.
+They are targeted with `JAVASCRIPT` via `CSS` `REGEX` syntax.
 
 ```css
 [class^=' app-option-'] { background-color: #939393; }
