@@ -1,4 +1,4 @@
-# Curriculum For Teaching How To Build An `MVC Framework`
+# Curriculum For Teaching `MVC` Frameworks & Concepts
  > `Vanilla` `JAVASCRIPT` `CRUD` `SPA` `MVP` for teaching _junior devs_ on *__how__* to work with frameworks faster.
 
  * Dependencies:
@@ -79,7 +79,7 @@ function traverse( object_to_traverse , callback_function ) {
 There are times when we will need to apply the `CRUD` process to a nested set of `DOM` elements.
  > Example: updating a user profile and appending the new nested data.
 
-This function creates an `object tree` of `objects`. It's impossible to know exactly how many objects there may be. In addition, you may be unsure on how many properties those objects may have. The `traverse function` loops over each object and builds an `object tree`.
+This function creates an `object tree` of `objects`. It's impossible to know exactly how many objects there may be. In addition, you may be unsure about how many properties those objects contain. The `traverse function` loops over each object and builds an `object tree`.
 
 ### What is `.once`?
 `.once` is a method used to fire an event only once for a particular object.
