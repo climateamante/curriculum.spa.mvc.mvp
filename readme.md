@@ -1,16 +1,16 @@
-# Curriculum For Teaching How To Build A `MVC Framework`
- > `Vanilla` `Javascript` `CRUD` `SPA` `MVP` for teaching _junior devs_ on *__how__* to work with frameworks faster.
+# Curriculum For Teaching How To Build An `MVC Framework`
+ > `Vanilla` `JAVASCRIPT` `CRUD` `SPA` `MVP` for teaching _junior devs_ on *__how__* to work with frameworks faster.
 
  * Dependencies:
     > all dependencies are in the `lib` folder
     - [`require.js`](https://cdnjs.com/libraries/require.js)
         > used for loading in a custom template language
     - [require-text.js](https://cdnjs.com/libraries/require-text)
-        > An AMD loader plugin for loading the text templates with a `regex`.
+        > An AMD loader plugin for loading the text templates with a `REGEX`.
     - [`load.js`](https://cdnjs.com/libraries/loadjs)
         > async loading with promises
     - [`firebase.js`](https://firebase.google.com/docs/reference/js)
-        > used for crud features and shipping the `MVP`
+        > used for `CRUD` features and shipping the `MVP`
 
 ## Overview:
  - _Primary Goal_: teaching MVC structure to juniors and entry-level devs
@@ -23,7 +23,7 @@ All code is written to be readable, using traditional `ES5` code with the goal o
 ## What does the `App` do?
  > all the basic [`CRUD`](https://developer.mozilla.org/en-US/docs/Glossary/CRUD) features needed to create an `MVP Vanilla Framework`
 
- ![vanilla.js framework for firebase crud mvp](docs.crud.login.gif)
+ ![vanilla.js framework for firebase `CRUD` `MVP`](docs.crud.login.gif)
 
 
 ### Code Style:
@@ -51,20 +51,20 @@ var firebase_config = {
 
 ## A few common questions _junior devs_ typically ask:
 
-### What is .prototype?
+### What is `.prototype`?
 `.prototype` is used to target an object constructor directly, rather than individual objects.
 
 You can find information on the usage of `.prototype` [here](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes)
 
-### What is a try/catch function doing?
+### What is a `try/catch` function doing?
 This is similar to an if/else statement. Try/catch statements are used for testing code for errors. The try statement is filled with what is to be tested. The catch statement is filled with how you wish to handle errors that are caught.
 
 You can read more about try/catch statements [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch)
 
-### What's with the modules that return just an empty JSON object?
+### What's with the modules that return just an empty `JSON` object?
 This is done to instantiate an object for further use. Once instantiated, the object can have methods and properties added to it.
 
-### What is the *_traverse_* function used for?
+### What is the *_`traverse`_* function used for?
 
 ```javascript
 function traverse( object_to_traverse , callback_function ) {
@@ -81,10 +81,10 @@ There are times when we will need to apply the `CRUD` process to a nested set of
 
 This function creates an `object tree` of `objects`. It's impossible to know exactly how many objects there may be. In addition, you may be unsure on how many properties those objects may have. The `traverse function` loops over each object and builds an `object tree`.
 
-### What is .once?
+### What is `.once`?
 `.once` is a method used to fire an event only once for a particular object.
 
-### What is the anonymous function that is called after *_require_* is called in app.js?
+### What is the `anonymous function` that is called after *_require_* is called in `app.js`?
 ```javascript
 function(){
 
@@ -105,21 +105,21 @@ Finally, it pulls in the `view`, where to place the `template` and a callback fu
 
 ### What is the `app.util.mutation` module used for?
 
-An `observer function` for watching detects changes to the browser before they are attached to the `DOM`. 
+An `observer function` for watching detects changes to the browser before they are attached to the `DOM`.
 
 
 ### What are all the `APP` `HTML` `ID selectors`?
 
 This is a list of all IDs currently in use in the `Firebase` `App`.
-They are targeted with `Javascript` targeting `CSS` `REGEX` syntax.
+They are targeted with `JAVASCRIPT` targeting `CSS` `REGEX` syntax.
 
 ```css
 [class^=' app-option-'] { background-color: #939393; }
 ```
 
 
-#### HTML ID Tag Names
- > `HTML ID selectors` are listed in _alphabetical_ order.
+#### `HTML ID` Selectors
+ > listed in _alphabetical_ order.
 
   - `app-current-status`
   - `app-current-user`
