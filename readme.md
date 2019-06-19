@@ -20,7 +20,7 @@ This is a custom framework built to be used as curriculum for teaching, onboardi
 
 All code is written to be readable, using traditional `ES5` code with the goal of being able to speed up the process of learning how to reverse engineer a framework.
 
-Sure, it may seem verbose at times - but the goal is to teach different ways of learning how to learn frameworks _quickly_.
+Sure, it may seem verbose at times - but the goal is to share strategies on how to work with frameworks _quickly_.
 
 
 ## What does the `App` do?
