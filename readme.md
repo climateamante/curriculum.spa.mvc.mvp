@@ -2,7 +2,7 @@
  > `Vanilla` `Javascript` `CRUD` `SPA` `MVP` for teaching _junior devs_ on *__how__* to work with frameworks faster.
 
  * Dependencies:
-    > all dependcies are in the `lib` folder
+    > all dependencies are in the `lib` folder
     - [`require.js`](https://cdnjs.com/libraries/require.js)
         > used for loading in a custom template language
     - [require-text.js](https://cdnjs.com/libraries/require-text)
@@ -10,28 +10,28 @@
     - [`load.js`](https://cdnjs.com/libraries/loadjs)
         > async loading with promises
     - [`firebase.js`](https://firebase.google.com/docs/reference/js)
-        > used for crud features and shipping the mvp
+        > used for crud features and shipping the `MVP`
 
 ## Overview:
  - _Primary Goal_: teaching MVC structure to juniors and entry-level devs
- - _Secondary_: teching the ability to reverse engineer and working with different frameworks
+ - _Secondary_: teaching the ability to reverse engineer and working with different frameworks
 
 This is a custom framework built to be used as curriculum for teaching, onboarding, and mentoring _junior devs_.
 
-All code is written to be readable, using traditional `ES5` code with the goal of being able to speed up the process of learning how to reverse engeineer a framework.
+All code is written to be readable, using traditional `ES5` code with the goal of being able to speed up the process of learning how to reverse engineer a framework.
 
-Sure, it may seem verbose at times - but the goals is to teach different ways of learning how to learn frameworks _quickly_.
+Sure, it may seem verbose at times - but the goal is to teach different ways of learning how to learn frameworks _quickly_.
 
 
 ## What does the `App` do?
- > all the basic [`CRUD`](https://developer.mozilla.org/en-US/docs/Glossary/CRUD) features needed to create a `MVP Vanilla Framework`
+ > all the basic [`CRUD`](https://developer.mozilla.org/en-US/docs/Glossary/CRUD) features needed to create an `MVP Vanilla Framework`
 
  ![vanilla.js framework for firebase crud mvp](docs.crud.login.gif)
 
 
 ### Code Style:
 
-When possible the the [`Python` PEP 8](https://www.python.org/dev/peps/pep-0008/) style coding practices were used
+When possible the [`Python` PEP 8](https://www.python.org/dev/peps/pep-0008/) style coding practices were used
 
  - `dot notation` with `IIFE's` over `bracket notation`
     > `app.contoller.user.singin` _versus_ `app.controller[user].signin()`
@@ -57,7 +57,7 @@ var firebase_config = {
 ### What is .prototype?
 `.prototype` is used to target an object constructor directly, rather than individual objects.
 
-You can find information on usage of `.prototype` [here](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes)
+You can find information on the usage of `.prototype` [here](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes)
 
 ### What is a try/catch function doing?
 This is similar to if/else statement. Try/catch statements are used for testing code for errors. The try statement is filled with what is to be tested. The catch statement is filled with how you wish to handle errors that are caught.
@@ -65,7 +65,7 @@ This is similar to if/else statement. Try/catch statements are used for testing 
 You can read more about try/catch statements [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch)
 
 ### What's with the modules that return just an empty JSON object?
-This is done to instatiate an object for further use. Once instantiated, the object can have methods and properties added to it.
+This is done to instantiate an object for further use. Once instantiated, the object can have methods and properties added to it.
 
 ### What is the *_traverse_* function used for?
 
@@ -79,7 +79,7 @@ function traverse( object_to_traverse , callback_function ) {
     }
 }
 ```
-This is used to create an object tree of objects in the database. This function is used, because it is impossible to know exactly how many objects there may be. In addition, it's impossible to know how many properties those objects may have. The traverse function loops over each object and builds an object tree.
+This function creates an `object tree` of `objects`. It's impossible to know exactly how many objects there may be. In addition, you may be unsure on how many properties those objects may have. The `traverse function` loops over each object and builds an `object tree`.
 
 ### What is .once?
 .once is a method used to fire an event only once for a particular object.
@@ -108,10 +108,10 @@ Finally, it pulls in the `view`, where to place the `template` and a callback fu
 An `observer function` for watching detects changes to the browser before they are attached to the `DOM`.
 
 
-### What are all the `APP` `HTML` `ID secletors`?
+### What are all the `APP` `HTML` `ID selectors`?
 
 This is a list of all IDs currently in use in the `Firebase` `App`.
-They are targeted with `javascript` targeting `css` `regex` syntax.
+They are targeted with `Javascript` targeting `CSS` `REGEX` syntax.
 
 ```css
 [class^=' app-option-'] { background-color: #939393; }
