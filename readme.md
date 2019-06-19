@@ -31,7 +31,7 @@ All code is written to be readable, using traditional `ES5` code with the goal o
 When possible the [`Python` PEP 8](https://www.python.org/dev/peps/pep-0008/) style coding practices were used
 
  - `dot notation` with `IIFE's` over `bracket notation`
-    > `app.contoller.user.singin` _versus_ `app.controller[user].signin()`
+    > `app.contoller.user.signin` _versus_ `app.controller[user].signin()`
  - `single quotes` over `double quotes`.
  - `underscores` over `dashes`
     > `var name_of_property` _versus_  `var name-of-property`
@@ -57,7 +57,7 @@ var firebase_config = {
 You can find information on the usage of `.prototype` [here](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes)
 
 ### What is a try/catch function doing?
-This is similar to if/else statement. Try/catch statements are used for testing code for errors. The try statement is filled with what is to be tested. The catch statement is filled with how you wish to handle errors that are caught.
+This is similar to an if/else statement. Try/catch statements are used for testing code for errors. The try statement is filled with what is to be tested. The catch statement is filled with how you wish to handle errors that are caught.
 
 You can read more about try/catch statements [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch)
 
@@ -76,10 +76,13 @@ function traverse( object_to_traverse , callback_function ) {
     }
 }
 ```
+There are times when we will need to apply the `CRUD` process to a nested set of `DOM` elements.
+ > Example: updating a user profile and appending the new nested data.
+
 This function creates an `object tree` of `objects`. It's impossible to know exactly how many objects there may be. In addition, you may be unsure on how many properties those objects may have. The `traverse function` loops over each object and builds an `object tree`.
 
 ### What is .once?
-.once is a method used to fire an event only once for a particular object.
+`.once` is a method used to fire an event only once for a particular object.
 
 ### What is the anonymous function that is called after *_require_* is called in app.js?
 ```javascript
@@ -100,9 +103,9 @@ This `callback function` runs first with the app config.
 Then configures the `app` to use the `firebase` database.
 Finally, it pulls in the `view`, where to place the `template` and a callback function to run when complete for the `signin` process.
 
-### What is the util.mutation module used for?
+### What is the `app.util.mutation` module used for?
 
-An `observer function` for watching detects changes to the browser before they are attached to the `DOM`.
+An `observer function` for watching detects changes to the browser before they are attached to the `DOM`. 
 
 
 ### What are all the `APP` `HTML` `ID selectors`?
