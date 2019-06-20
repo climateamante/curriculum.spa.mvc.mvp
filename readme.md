@@ -21,7 +21,7 @@ This is a custom framework built to be used as curriculum for teaching, onboardi
 All code is written to be readable, using traditional `ES5` code with the goal of being able to speed up the process of learning how to reverse engineer a framework.
 
 ## What does the `App` do?
- > all the basic [`CRUD`](https://developer.mozilla.org/en-US/docs/Glossary/CRUD) features needed to create an `MVP Vanilla Framework`
+ > all the basic [`CRUD`](https://developer.mozilla.org/en-US/docs/Glossary/CRUD) features needed to `MVP` a `Vanilla Javascript` framework.
 
  ![vanilla.js framework for firebase `CRUD` `MVP`](docs.crud.login.gif)
 
