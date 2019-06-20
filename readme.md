@@ -30,14 +30,14 @@ All code is written to be readable, using traditional `ES5` code with the goal o
 
 When possible the [`Python` PEP 8](https://www.python.org/dev/peps/pep-0008/) style coding practices were used
 
- - `dot notation` with `IIFE's` over `bracket notation`
+ - `dot notation` over `bracket notation`
     > `app.contoller.user.signin` _versus_ `app.controller[user].signin()`
  - `single quotes` over `double quotes`
  - `underscores` over `dashes`
     > `var name_of_property` _versus_  `var name-of-property`
 
 ## How do I get started?
- > Add in your `API Keys` to: `app.config.js` with your `firebase` credentials
+ > Add in your `API Keys` to: `app.config.js` for the `Firebase` credentials
 ```javascript
 var firebase_config = {
         apiKey: FIREBASE_API_KEY,
